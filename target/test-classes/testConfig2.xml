@@ -7,18 +7,13 @@
 	
 	<bean id="saveDamzelQuest" class="org.java.spring.in.action.tutorial.model.SaveDamzelQuest">
 	</bean>
-	<bean id="cowardlyQuest" class="org.java.spring.in.action.tutorial.model.CowardlyQuest">
-	</bean>
-	 <!-- <bean id="braveKnight" class="org.java.spring.in.action.tutorial.model.BraveKnight"
+	
+	 <bean id="braveKnight" class="org.java.spring.in.action.tutorial.model.BraveKnight"
 		c:_0-ref="saveDamzelQuest">
-	</bean> --> 
-	 <bean id="braveKnight" class="org.java.spring.in.action.tutorial.model.BraveKnight">
-	 	<constructor-arg name="quest" ref="saveDamzelQuest"/>
-	</bean>
+	</bean> 
+	
 	<bean id="machineGunCD" class="org.java.spring.in.action.tutorial.model.MachineGunCD">
 		<constructor-arg>
-		<!-- populating a list with predefined values
-			the same goes for a set -->
 			<list>
 				<value>Mr Putin is Happy!</value>
 				<value>Party in the Kremlin</value>
@@ -27,10 +22,6 @@
 				<value>Go say hello!She is waiting for you!</value>
 			</list>
 		</constructor-arg>
-	</bean>
-	
-	<bean id="cowardlyKnight" class="org.java.spring.in.action.tutorial.model.CowardlyKnight">
-		<property name="quest" ref="cowardlyQuest"/>
 	</bean>
 	
 	<!-- <bean id="braveKnight" class="org.java.spring.in.action.tutorial.model.BraveKnight"

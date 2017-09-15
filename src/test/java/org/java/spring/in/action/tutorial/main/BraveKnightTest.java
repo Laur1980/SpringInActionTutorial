@@ -33,10 +33,10 @@ public class BraveKnightTest {
 	@Test
 	public void testEmbark() {
 		when(quest.embarck()).thenReturn("Quest is done!");
-		assertEquals(knight.embarkOnTheQuest(quest),"Quest is done!");
+		assertEquals(knight.embarkOnTheQuest(),"Quest is done!");
 		verify(quest,times(1)).embarck();
 		System.out.println(">>>"+quest.embarck()+"<<<");
-		System.out.println(">>>"+knight.embarkOnTheQuest(quest)+"<<<");
+		System.out.println(">>>"+knight.embarkOnTheQuest()+"<<<");
 	}
 
 }

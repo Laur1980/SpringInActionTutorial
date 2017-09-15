@@ -12,7 +12,7 @@ public class AnnotationConfigApplicationContextApp {
 				Quest quest = context.getBean(Quest.class);
 	        	BraveKnight knight = context.getBean(BraveKnight.class);
 	        	System.out.println(quest.embarck());
-	        	System.out.println(knight.embarkOnTheQuest(quest));
+	        	System.out.println(knight.embarkOnTheQuest());
 			}
 	}
 

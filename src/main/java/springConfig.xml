@@ -9,4 +9,9 @@
 	<bean id="knight" class="org.java.spring.in.action.tutorial.model.BraveKnight">
 		<constructor-arg ref="quest"/>
 	</bean>
+	<!-- Importing another spring configuration xml file -->
+	<import resource="springConfig.xml"/>
+	<!-- Importing spring java configuration files  -->
+	<bean class="org.java.spring.in.action.tutorial.main.SpringConfig"/>
+	<bean class="org.java.spring.in.action.tutorial.main.SpringConfig2"/>
 </beans>

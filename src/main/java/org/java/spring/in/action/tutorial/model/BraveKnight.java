@@ -1,6 +1,6 @@
 package org.java.spring.in.action.tutorial.model;
 
-public class BraveKnight {
+public class BraveKnight implements Knight{
 				
 	private Quest quest;
 
@@ -8,7 +8,7 @@ public class BraveKnight {
 			this.quest = quest;
 	}
 
-	public String embarkOnTheQuest(Quest quest){
+	public String embarkOnTheQuest(){
 		return quest.embarck();
 	}
 
