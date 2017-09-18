@@ -5,7 +5,11 @@ import java.util.Random;
 
 import javax.inject.Named;
 
+import org.springframework.beans.factory.config.ConfigurableBeanFactory;
+import org.springframework.context.annotation.Scope;
+
 @Named
+@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class MachineGunCD implements CompactDisc {
 	
 	private List<String> tracks;

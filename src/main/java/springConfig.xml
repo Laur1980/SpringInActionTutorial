@@ -4,9 +4,13 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans 
 						http://www.springframework.org/schema/beans/spring-beans.xsd">
 	
-	<bean id="quest" class="org.java.spring.in.action.tutorial.model.SaveDamzelQuest">
+	<bean id="quest" 
+		  class="org.java.spring.in.action.tutorial.model.SaveDamzelQuest" 
+		  scope="prototype">
 	</bean>
-	<bean id="knight" class="org.java.spring.in.action.tutorial.model.BraveKnight">
+	<bean id="knight" 
+	      class="org.java.spring.in.action.tutorial.model.BraveKnight"
+	      scope="singleton">
 		<constructor-arg ref="quest"/>
 	</bean>
 	<!-- Importing another spring configuration xml file -->
